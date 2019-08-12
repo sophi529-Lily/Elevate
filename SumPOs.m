@@ -1,0 +1,5 @@
+ maximumpower = find(contains(allPOinfo, 'K559'))
+ fullList = allPOinfo(maximumpower, :)
+ K559finally = unique(fullList, 'rows')
+ PriceAsNum = double(K559finally(:,3))
+ sum(PriceAsNum)
